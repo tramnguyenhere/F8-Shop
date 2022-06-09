@@ -29,6 +29,10 @@
   animation: fadeIn ease-in 0.3s;
 }
 
+.header__navbar-item-has-notification:hover .header__notification {
+  display: block;
+}
+
 .header__navbar-item-link,
 .header__navbar-item {
   display: inline-block;
@@ -125,4 +129,133 @@
 
 .header__qr-download-img {
   height: 16px;
+}
+
+/* Header notification */
+
+.header__notification {
+  position: absolute;
+  top: 118%;
+  right: 0;
+  width: 404px;
+  background-color: var(--white-color);
+  border: 1px solid #d3d3d3;
+  cursor: default;
+  /* Change the heart of animation */
+  transform-origin: calc(100% - 20px) top;
+  animation: headerNotificationGrowth ease-in 0.2s;
+  display: none;
+}
+
+/* Create the up arrow for notification box */
+.header__notification::before {
+  content: '';
+  border-width: 20px 27px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
+  position: absolute;
+  right: 4px;
+  top: -29px;
+}
+
+@keyframes headerNotificationGrowth {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* The bridge to link the option with hover */
+
+.header__notification::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  right: 0;
+  top: -16px;
+  height: 20px;
+  display: block;
+}
+
+.header__notification-header {
+  background-color: var(--white-color);
+  height: 40px;
+}
+
+.header__notification-header h3 {
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 40px;
+  margin: 0 0 0 12px;
+  /* Unable to copy, select, or highlight words */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.header__notification-list {
+  padding-left: 0;
+}
+
+.header__notification-item {
+  display: flex;
+}
+
+.header__notification-item:hover {
+  background-color: #f1f1f1;
+}
+
+.header__notification-link {
+  display: flex;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.header__notification--viewed {
+  background-color: rgba(238, 75, 43, 0.09);
+}
+
+.header__notification-img {
+  width: 48px;
+  object-fit: contain;
+}
+
+.header__notification-info {
+  margin-left: 12px;
+}
+
+.header__notification-name {
+  display: block;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.header__notification-description {
+  display: block;
+  color: #756f6e;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-top: 4px;
+}
+
+.header__notification-footer {
+  display: flex;
+}
+
+.header__notification-footer-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  width: 100%;
+  padding: 8px;
+  margin: auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
 }
