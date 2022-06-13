@@ -423,7 +423,17 @@
 .header__cart {
   width: 150px;
   text-align: center;
+}
+
+.header__cart-wrap {
   position: relative;
+  display: inline-block;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.header__cart-wrap:hover .header__cart-list {
+  display: block;
 }
 
 .header__cart-icon {
@@ -435,11 +445,13 @@
 .header__cart-list {
   position: absolute;
   top: calc(100% + 4px);
-  right: 50px;
+  right: 1px;
   background-color: var(--white-color);
   width: 410px;
   border-radius: 2px;
   box-shadow: 0 1px 3.125rem rgba(0, 0, 0, 0.2);
+  display: none;
+  animation: fadeIn ease-in 0.3s;
 }
 
 .header__cart-list::after {
