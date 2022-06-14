@@ -37,7 +37,7 @@
 }
 
 .header__navbar-user-name {
-  margin-left: 8px;
+  margin-left: 4px;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -90,6 +90,10 @@
   border-bottom-right-radius: 2px;
 }
 
+.header__navbar-user-item--separate {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .header__navbar-user-item a:hover {
   background-color: #fafafa;
 }
@@ -106,7 +110,7 @@
 .header__navbar-item-link,
 .header__navbar-item {
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--white-color);
   text-decoration: none;
   font-weight: 300;
@@ -122,6 +126,10 @@
 .header__navbar-icon-link {
   color: var(--white-color);
   text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+  margin-left: 3px;
 }
 
 .header__navbar-item-link:hover,
@@ -209,10 +217,11 @@
   right: 0;
   width: 404px;
   background-color: var(--white-color);
-  border: 1px solid #d3d3d3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
   cursor: default;
   /* Change the heart of animation */
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
   animation: headerNotificationGrowth ease-in 0.2s;
   will-change: opacity, transform;
   display: none;
@@ -473,9 +482,15 @@
   margin-left: 8px;
 }
 
+.header__logo-link {
+  color: transparent;
+  text-decoration: none;
+}
+
 .header__logo-img {
-  width: 120px;
+  width: 150px;
   margin-top: 6px;
+  fill: var(--white-color);
 }
 
 .header__search {
@@ -728,7 +743,7 @@
 .header__search-option {
   position: absolute;
   right: 0;
-  top: 100%;
+  top: calc(100% - 1px);
   width: 140px;
   box-shadow: 0 1px 2px #e0e0e0;
   padding-left: 0;
@@ -784,7 +799,7 @@
 
 .header__search-history {
   position: absolute;
-  top: calc(100% + 2px);
+  top: 100%;
   left: 0;
   width: calc(100% - 16px);
   margin-top: 2px;
