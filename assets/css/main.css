@@ -981,3 +981,128 @@
 .home-filter__page-btn--disabled .home-filter__page-icon {
   color: #ccc;
 }
+
+/* Product item */
+
+.home-product-item {
+  background-color: var(--white-color);
+  margin-top: 10px;
+  position: relative;
+}
+
+.home-product-item__img {
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.home-product-item__name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.8rem;
+  margin: 10px 10px 6px;
+  height: 3.6rem;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.home-product-item__price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.home-product-item__price-old {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  color: #666;
+  text-decoration: line-through;
+}
+.home-product-item__price-current {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+
+.home-product-item__action {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 10px 0;
+}
+
+.home-product-item__like {
+  font-size: 1.3rem;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-fill {
+  display: inline-block;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-empty {
+  display: none;
+}
+
+i.home-product-item__like-icon-fill {
+  color: #f63d30;
+  display: none;
+}
+
+.home-product-item__rating {
+  font-size: 1rem;
+  transform: scale(0.8);
+  color: #d5d5d5;
+  transform-origin: right;
+  margin: -1px 0 0 auto;
+}
+
+.home-product-item__star--gold {
+  color: var(--star-gold-color);
+}
+
+.home-product-item__sold {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-left: 6px;
+}
+
+.home-product-item__origin {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 10px 0;
+  font-weight: 300;
+  color: #595959;
+  font-size: 1.2rem;
+}
+
+.home-product-item__brand {
+}
+
+.home-product-item__origin-name {
+}
+
+.home-product-item__favourite {
+  position: absolute;
+  display: flex;
+  top: 0;
+  align-items: center;
+}
+
+.home-product-item__favourite-icon {
+}
+
+.home-product-item__sale-off {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home-product-item__sale-off-percent {
+}
+.home-product-item__sale-off-label {
+}
