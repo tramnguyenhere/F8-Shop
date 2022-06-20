@@ -1,3 +1,7 @@
+.app {
+  overflow: hidden;
+}
+
 .header {
   height: var(--header-height);
   width: 100%;
@@ -479,6 +483,10 @@
   margin: 0 8px;
 }
 
+.header__mobile-search {
+  padding: 0 12px;
+}
+
 .header__mobile-search-icon {
   color: var(--white-color);
   font-size: 2.6rem;
@@ -486,12 +494,17 @@
 
 .header__logo {
   width: 200px;
-  margin-left: 8px;
+}
+
+.header__search-checkbox:checked ~ .header__search {
+  display: flex;
 }
 
 .header__logo-link {
   color: transparent;
   text-decoration: none;
+  display: block;
+  /* line-height: 0; */
 }
 
 .header__logo-img {
@@ -1255,7 +1268,8 @@ i.home-product-item__like-icon-fill {
 /* Pagination */
 
 .home-product__pagination {
-  margin: 48px 32px;
+  margin: 48px 0 32px 0;
+  padding-left: 0;
 }
 
 /* Footer */
