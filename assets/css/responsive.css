@@ -37,12 +37,20 @@
     display: none;
   }
 
+  .nav__bars-btn {
+    display: block;
+  }
+
   .app__container {
     margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
   }
 
   .header__sort-bar {
     display: flex;
+  }
+
+  .app__content {
+    padding-top: 8px;
   }
 }
 
@@ -55,6 +63,9 @@
   .header__cart {
     width: 80px;
     text-align: center;
+  }
+  .nav__bars-btn {
+    margin-right: 20px;
   }
 }
 
@@ -71,6 +82,14 @@
   .header__cart,
   .header__logo {
     width: unset;
+  }
+
+  .header__mobile-search {
+    display: block;
+  }
+
+  .nav__bars-btn {
+    margin-left: 10px;
   }
 
   .header__search {
