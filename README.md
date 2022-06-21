@@ -24,5 +24,5 @@ https://f8-shopee-tramnguyenhere.netlify.app
 
 # Technology in the project
 
-HTML
-CSS (with handmade Grid Library)
+* HTML
+* CSS (with handmade Grid Library)
