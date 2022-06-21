@@ -117,12 +117,9 @@
                 </nav>
 
                 <!-- Header with search -->
-                <div class="header-with-search">
+                <div class="header-with-search header-with-slide-bar">
                     <!-- Navbarslide -->
-                    <label for="nav-mobile-input" class="nav__bars-btn">
-                        <i class="nav__bars-btn-icon fa-solid fa-bars"></i>
-                    </label>
-    
+                    
                     <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
     
                     <label for="nav-mobile-input" class="nav__overlay"></label>
@@ -147,10 +144,15 @@
                             </li>
                         </ul>
                     </nav>
-
-                    <label for="mobile-search-checkbox" class="header__mobile-search">
-                        <i class="header__mobile-search-icon fa-regular fa-magnifying-glass"></i>
-                    </label>
+                    <div class="header__icon-wrap">
+                        <label for="nav-mobile-input" class="nav__bars-btn">
+                            <i class="nav__bars-btn-icon fa-solid fa-bars"></i>
+                        </label>
+        
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fa-regular fa-magnifying-glass"></i>
+                        </label>
+                    </div>
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -1008,7 +1010,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="grid wide">
+            <div class="grid wide footer__content">
                 <div class="row">
                     <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
@@ -1075,8 +1077,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-2-4 m-4 c-6">
-                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                    <div class="col l-2-4 m-8 c-12">
+                        <h3 class="footer__heading footer__heading-apps">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="/assets/img/QR-code.png" alt="Download by QR" class="footer__download-qr">
                             <div class="footer__dowload-apps">
