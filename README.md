@@ -19,10 +19,10 @@ On mobile phone
 
 ![Screenshot 2022-06-21 at 17 08 50](https://user-images.githubusercontent.com/57455557/174819192-a76f8bf3-4996-4a35-9676-b18d17fc7439.png)
 
-#Demo
+# Demo
 https://f8-shopee-tramnguyenhere.netlify.app
 
-#Technology in the project
+# Technology in the project
 
 HTML
 CSS (with handmade Grid Library)
